@@ -1,8 +1,12 @@
 @charset "utf-8";
-
+@import 'https://fonts.googleapis.com/css?family=David+Libre';
 
 @import "reset";
 @import "variables";
+
+body {
+  font-family: 'David Libre', serif;
+}
 
 a {
   color: white;
