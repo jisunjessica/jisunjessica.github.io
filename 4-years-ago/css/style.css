@@ -47,7 +47,8 @@ table {
 
 a {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 29px 12px; }
 
 body {
   background-color: #28292b;
@@ -59,9 +60,9 @@ header {
   width: 100%;
   height: 16px;
   padding: 30px;
-  opacity: 0.99; }
-  header a {
-    margin-right: 40px; }
+  opacity: 1; }
+  header a:hover, header a:active {
+    background-color: #ff276b; }
 
 .sitename {
   font-weight: bold; }
