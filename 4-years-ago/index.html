@@ -1,23 +1,67 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>벌써 4년 전</title>
+</head>
+<body>
+  <header>
+    <a href="">Information</a>
+    <a href="">Archive</a> 
+    <a href="">History</a>    
+    <a href="">SNS</a>
+  </header>
+  <div id="fullpage">
+    <div class="section active">
+      <span>No.01</span>
+      <h1 class="title">Inactive checkboxes are poor UX</h1>
+      <p class="explanation">
+        “An inactive checkbox is always a bit of a mystery to me. Why is it inactive? How do I get it to activate so I can select it?”
+      </p>
+      <span class="artist">
+        홍길동<br>
+        Spoqa Inc.
+      </span>
+      <a href="http://www.naver.com">Read More</a>
+    </div>
+    <div class="section">
+      <span>No.02</span>
+      <h1 class="title">Be a better designer by designing less</h1>
+      <p class="explanation">
+        “It’s common for designers to rely on inspiration sources. For many, that process is never really fleshed out. They find something that inspires them, then they work incredibly hard to create something original. Most struggle.”
+      </p>
+      <span class="artist">
+        김도돌<br>
+        Spoqa Inc.
+      </span>
+      <a href="http://www.naver.com">Read More</a>
+    </div> 
+    <div class="section">
+      <span>No.03</span>
+      <h1 class="title">Is this the end for mobile apps?</h1>
+      <p class="explanation">
+        “So from a user perspective, mobile apps will likely disappear completely. Or to such an extent they’re barely even noticeable.”      
+      </p>
+      <span class="artist">
+        이철수<br>
+        Spoqa Inc.
+      </span>
+      <a href="http://www.naver.com">Read More</a>
+    </div>
+    <div class="section">
+      <span>No.04</span>
+      <h1 class="title">Getting started</h1>
+      <p class="explanation">
+        “Yes, VR is immersive and you can design 360 degrees. But take into consideration the likelihood of the user doing so. Or at least their comfort. Designing behind the user is “below the fold” on steroids.”
+      </p>
+      <span class="artist">
+        휘파람<br>
+        Spoqa Inc.
+      </span>
+      <a href="http://www.naver.com">Read More</a>
+    </div>          
+  </div>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</body>
+</html>
