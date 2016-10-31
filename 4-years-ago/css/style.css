@@ -1,4 +1,3 @@
-@import "https://fonts.googleapis.com/css?family=Lato:700";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,68 +45,56 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  background-color: #28292b;
-  color: white;
-  font-family: 'Lato', sans-serif; }
+/**
+GENERAL
+**/
+* {
+  font-family: 'Spoqa Han Sans', 'Sans-serif'; }
+
+#wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 5%; }
 
 a {
-  color: white; }
+  color: #000; }
 
-header {
-  background-color: #28292b;
-  border-bottom: 4px solid #313131;
-  position: fixed;
-  width: 100%;
-  height: 16px;
-  padding: 30px;
-  opacity: 0.99; }
-  header a.nav-menu {
-    padding: 29px 12px;
-    text-decoration: none; }
-    header a.nav-menu:hover, header a.nav-menu:active {
-      background-color: #ff276b; }
+h1 {
+  font-size: 3em; }
 
-.sitename {
-  font-weight: bold; }
+h3 {
+  font-size: 2em; }
 
-.section {
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 60px;
-  min-height: 600px;
-  border-bottom: 1px solid #313131; }
-  .section .issue-number {
-    position: absolute;
-    left: -16px;
-    height: 100px;
-    display: flex;
-    align-items: flex-start;
-    margin-top: 70%;
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg); }
-  .section a.title {
-    font-size: 80px;
-    margin-bottom: 40px;
-    line-height: 1.1em;
-    display: block; }
-  .section p.explanation {
-    font-size: 24px;
-    line-height: 1.45em;
-    margin-left: 260px; }
-  .section .artist, .section .read-more {
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg); }
-  .section .artist {
-    display: inline-block;
-    margin-top: 20px; }
-  .section .read-more {
-    display: inline-block;
-    padding: 10px 36px;
-    border: 3px solid white;
-    margin-top: 30px;
-    text-decoration: none; }
+ul li {
+  font-size: 1.4em; }
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+footer {
+  background-color: #eee; }
+
+#main .poster-text {
+  font-size: 2em;
+  line-height: 1.7em;
+  color: #9d9d9c; }
+#main a.artist-name {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 3px 4px 0px 4px;
+  margin-right: 1px;
+  text-decoration: none; }
+  #main a.artist-name:hover {
+    background-color: #eee; }
+
+#artists {
+  background-color: #eee; }
+  #artists .one-artist {
+    width: 50%; }
+
+#exhibition-info {
+  font-size: 1.4em;
+  line-height: 1.7em; }
 
 /*# sourceMappingURL=style.css.map */
