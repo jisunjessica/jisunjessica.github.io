@@ -3,13 +3,16 @@
 @import "reset";
 @import "variables";
 
-$primary-color: #ff7175;
+$primary-color: #c652b4;
+$grey-25: #d0d0d0;
 $grey-txt: #9d9d9c;
 $grey-txt-d1: #706f6f;
+$white: #fff;
+$border-radius-base: 0px;
 
-/**
+/**********************
 GENERAL
-**/
+**********************/
 
 * { 
   font-family: 'Spoqa Han Sans', 'Sans-serif'; 
@@ -20,7 +23,7 @@ GENERAL
   font-weight: 700;
 }
 
-#wrapper {
+.container {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
@@ -39,6 +42,10 @@ h3 {
   font-size: 2em;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
 ul li {
   font-size: 1.4em;
   display: inline-block;
@@ -49,6 +56,7 @@ section {
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-top: 90px;
 }
 
 .section-title {
@@ -62,8 +70,20 @@ section {
   background-color: $primary-color;
 }
 
-header {
-  padding-top: 40px;
+/**********************
+NAVIGATION
+**********************/
+
+nav {
+  padding-top: 34px;
+  padding-bottom: 14px;
+  //box-shadow: 1px 1px 6px #eee;
+  z-index: 1100;
+  top: 0;
+  position: fixed;
+  display: block;
+  width: 100%;
+  background-color: rgba($white, 0.98);
 
   #logo {
     text-decoration: none;
@@ -72,22 +92,74 @@ header {
   h1 {
     margin-bottom: 20px;
   }
+
+  .site-title {
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 4px;
+  }
+
+  .exhibition-info-title {
+    color: $grey-25;
+  }
+
+  ul.nav-menu {
+    display: inline-block;
+    float: right;
+    font-size: 0.8em;
+    
+    li {
+      padding: 0px 6px;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 8px 10px;
+
+      &:hover {
+        color: $white;
+        background-color: rgba($primary-color, 1);
+        font-weight: bolder;
+      }
+    }
+
+  }  
+
 }
 
 footer {
-  background-color: #eee;
+  border-top: 1px solid rgba($primary-color, 0.2);
+  padding-top: 60px;
+  bottom: 0;
+  height: 200px;
 }
 
+/** .bg {
+  width: 100%;
+  display: block;
+  height: 100%;
+  mix-blend-mode: darken;
+  opacity: 0.5;
+  position: fixed;
+  z-index: 10;
+} **/
 
 #main {
   .poster-text {
     font-size: 2em;
+    font-weight: 500;
     line-height: 1.7em;
     color: $grey-txt;
+
+    background: url("/img/pttrn.svg");
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    mix-blend-mode: multiply;
   }
   a.artist-name {
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: $border-radius-base;
     padding: 3px 4px 0px 4px;
     margin-right: 1px;
     text-decoration: none;
@@ -105,7 +177,7 @@ footer {
 }  
 
 #artists {
-  background-color: #eee;
+  border-top: 1px solid $primary-color;
   .one-artist {
     width: 50%;
   }
@@ -117,7 +189,8 @@ footer {
 }
 
 .group-info-text {
-  ul li {
-    list-style-type: square;
+  li {
+    list-style-type: upper-roman;
+    line-height: 2em;
   }
 }
