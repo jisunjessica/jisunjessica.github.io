@@ -16,7 +16,7 @@
       <a href="#" id="logo">
         <h1 class="site-title">
           <span class="text-bold">벌써 4년 전</span>展
-          <span class="exhibition-info-title">12.1-12.6 @The gallery</span>
+          <span class="exhibition-info-title">12.1-12.6 @THE GALLERY</span>
           </h1>
       </a>
       <ul class="nav-menu">
@@ -81,7 +81,7 @@
     <section id="group-info">
       <h2 class="section-title">벌써 N년 전 소개</h2>
       <div class="group-intro">
-        <ul class="group-info-text">
+        <ol class="group-info-text">
           <li>‘벌써 N년 전’은 2012년에 시각디자인전공 졸업전시를 치룬 사람들이 모여 여는, 지나온 N년에 대한 결산이자 각자가 걸어가고 있는 길에 대한 중간점검이다.</li>
           <li>사회생활 N년 차. 현재와 미래가 직교하는 사분면 위에서 각자의 좌표를 재확인하고자 한다</li>
           <li>이 전시는 매년 새로운 구성원으로 이루어진다.</li>
@@ -115,36 +115,56 @@
           <li>구성원들은 전시가 아니면 만날 일이 없는 조합이다.</li>
           <li>내 목소리를 담은 작업을 가까운 거리에서 공유할 수 있는 곳이다.</li>
           <li>지금껏 해왔던, 그리고 앞으로 할 작업에 대한 태도와 의미를 다시 생각하는 자리이다.</li>
-        </ul>
+        </ol>
       </div>
     </section>    
   </div>
   <footer>
     <div class="container row">
-      <div class="col-sm-4">
-        <h3>벌써 사년 전</h3>
-        <span>벌써 N년 전 네 번째 전시</span> 
+      <div class="row col-xs-12 col-sm-4">
+        <h6>벌써 4년 전</h6>
+        <p>벌써 N년 전 네 번째 전시</p>
+        <a href="https://www.facebook.com/already4years/">
+          Facebook
+        </a>
+        <a href="https://www.instagram.com/n.years.ago/">
+          Instagram
+        </a>
       </div>
-      <div class="col-sm-4">
-        <h3>2016.12.1목 - 12.6화</h3>
-        <p>월 - 토 12 - 8PM / 일 12 - 6 PM</p> 
+      <div class="col-xs-12 col-sm-4">
+        <h6>2016.12.1목 - 12.6화</h6>
+        <p>월-토 12-8PM / 일 12-6PM</p> 
         <p>연계 토크 12월 N일 오후 N시</p>
       </div>
-      <div class="col-sm-4">
-        <h3>The Gallery</h3>
+      <div class="col-xs-12 col-sm-4">
+        <h6>THE GALLERY</h6>
         <p>서울시 마포구 서교동 367-13</p> 
         <p>땡스북스 건물 2F</p>
       </div>      
-      <a href="https://www.facebook.com/already4years/">
-        <img src="img/fb.png" alt="facebook-logo" class="social-icon">
-      </a>
-      <a href="https://www.instagram.com/n.years.ago/">
-        <img src="img/fb.png" alt="facebook-logo" class="social-icon">
-      </a>
+
       <div class="row">
-        <p>&copy; 2016 Jisun park</p>
+        <p class="col-xs-12 copyright-text">&copy; 2016 <a href="">Jisun park</a></p>
       </div>
-    </div>  
+    </div> 
+    <div class="row" style="display:none;">
+      <div id="map"></div>
+      <script>
+      function initMap() {
+        var uluru = {lat: 37.5505013, lng: 126.9193328};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV1XOQkoGuEYe4gXmWfTWfqUzn2EIG5rE&callback=initMap">
+      </script>
+    </div>
   </footer>  
 </body>
 
