@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 @import "reset";
 @import "variables";
 
@@ -15,7 +16,7 @@ GENERAL
 **********************/
 
 * { 
-  font-family: 'Spoqa Han Sans', 'Sans-serif'; 
+  font-family: "Spoqa Han Sans","Source Sans Pro",Apple SD Gothic Neo,Nanum Barun Gothic,Nanum Gothic,"돋움",Dotum,Verdana,Arial,sans-serif; 
   color: #706f6f;
 }
 
@@ -43,7 +44,8 @@ h3 {
 }
 
 p {
-  line-height: 1.6em;
+  font-size: 0.8em;
+  line-height: 1.8em;
 }
 
 .exhibition-intro p {
@@ -66,7 +68,7 @@ section {
 .section-title {
   font-size: 44px;
   font-weight: 100; 
-  margin-bottom: 40px;  
+  margin-bottom: 50px;  
 }
 
 .hr {
@@ -162,53 +164,68 @@ footer {
   background-color: grey;
 }
 
-/** .bg {
+.bg {
+  /**
   width: 100%;
   display: block;
   height: 100%;
   mix-blend-mode: darken;
   opacity: 0.5;
+  **/
   position: fixed;
   z-index: 10;
-} **/
+  background: url("/img/pttrn.svg");
+  background-size: 700px 700px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  mix-blend-mode: multiply;
+
+}
+a.artist-name {
+  background-color: #fff;
+  border-radius: $border-radius-base;
+  padding: 3px 4px 0px 4px;
+  margin-right: 1px;
+  text-decoration: none;
+  
+  -webkit-transition: background-color .20s ease-out;
+  -moz-transition: background-color .20s ease-out;
+  -o-transition: background-color .20s ease-out;
+  transition: background-color .20s ease-out;
+  
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
 
 #main {
   .poster-text {
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: 500;
-    line-height: 1.7em;
+    line-height: 1.8em;
     color: $grey-txt;
-
-    background: url("/img/pttrn.svg");
-    background-size: 700px 700px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    mix-blend-mode: multiply;
-  }
-  a.artist-name {
-    background-color: #fff;
-    border-radius: $border-radius-base;
-    padding: 3px 4px 0px 4px;
-    margin-right: 1px;
-    text-decoration: none;
-    
-    -webkit-transition: background-color .20s ease-out;
-    -moz-transition: background-color .20s ease-out;
-    -o-transition: background-color .20s ease-out;
-    transition: background-color .20s ease-out;
-    
-    &:hover {
-      background-color: $primary-color;
-      color: #fff;
-    }
   }
 }  
 
 #artists {
-  border-top: 1px solid $primary-color;
-  .one-artist {
-    width: 50%;
+  .artists-list {
+    font-size: 0.8em;
+    margin-bottom: 70px;
+    li {
+      margin-right: 10px;
+    }
   }
+
+  h4 {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .one-artist {
+    margin-bottom: 50px;
+  }
+
 }
 
 #exhibition-info {
@@ -216,10 +233,11 @@ footer {
   line-height: 1.7em;
 }
 
-.group-info-text {
+ul.group-info-text {
   li {
-    list-style-type: upper-roman;
+    list-style-type: square;
     line-height: 2em;
+    font-size: 1.2em;
   }
 }
 
