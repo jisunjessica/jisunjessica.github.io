@@ -162,20 +162,17 @@ footer {
   background-color: grey; }
 
 .bg {
-  /**
-  width: 100%;
-  display: block;
-  height: 100%;
-  mix-blend-mode: darken;
-  opacity: 0.5;
-  **/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: multiply;
   position: fixed;
   z-index: 10;
-  background: url("/img/pttrn.svg");
-  background-size: 700px 700px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  mix-blend-mode: multiply; }
+  left: 0; }
+  .bg img {
+    width: 400px;
+    height: 400px;
+    align-self: center; }
 
 a.artist-name {
   background-color: #fff;
