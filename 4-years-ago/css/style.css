@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -47,9 +47,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/**********************
+/********************************************
 GENERAL
-**********************/
+********************************************/
 * {
   font-family: "Spoqa Han Sans","Source Sans Pro",Apple SD Gothic Neo,Nanum Barun Gothic,Nanum Gothic,"돋움",Dotum,Verdana,Arial,sans-serif;
   color: #706f6f; }
@@ -78,9 +78,6 @@ h3 {
 p {
   font-size: 0.8em;
   line-height: 1.8em; }
-
-.exhibition-intro p {
-  margin-bottom: 20px; }
 
 ol li, ul li {
   font-size: 1.4em;
@@ -141,20 +138,9 @@ nav {
         font-weight: bolder;
         border-radius: 3px; }
 
-a.artist-name {
-  background-color: #fff;
-  border-radius: 3px;
-  padding: 3px 4px 0px 4px;
-  margin-right: 1px;
-  text-decoration: none;
-  -webkit-transition: background-color .20s ease-out;
-  -moz-transition: background-color .20s ease-out;
-  -o-transition: background-color .20s ease-out;
-  transition: background-color .20s ease-out; }
-  a.artist-name:hover {
-    background-color: #c652b4;
-    color: #fff; }
-
+/********************************************
+MAIN
+********************************************/
 #main .poster-text {
   font-size: 1.3em;
   font-weight: 500;
@@ -181,6 +167,23 @@ a.artist-name {
     align-self: center;
     text-align: center; }
 
+a.artist-name {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 3px 4px 0px 4px;
+  margin-right: 1px;
+  text-decoration: none;
+  -webkit-transition: background-color .20s ease-out;
+  -moz-transition: background-color .20s ease-out;
+  -o-transition: background-color .20s ease-out;
+  transition: background-color .20s ease-out; }
+  a.artist-name:hover {
+    background-color: #c652b4;
+    color: #fff; }
+
+/********************************************
+ARTISTS
+********************************************/
 #artists .artists-list {
   font-size: 0.8em;
   margin-bottom: 70px; }
@@ -192,9 +195,15 @@ a.artist-name {
 #artists .one-artist {
   margin-bottom: 50px; }
 
+/********************************************
+EXHIBITION-INFO
+********************************************/
 #exhibition-info {
   font-size: 1.4em;
   line-height: 1.7em; }
+
+.exhibition-intro p {
+  margin-bottom: 20px; }
 
 ul.group-info-text li {
   list-style-type: square;
