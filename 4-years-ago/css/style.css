@@ -47,6 +47,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.col-sm-83 {
+  width: 83.3%; }
+
 /********************************************
 GENERAL
 ********************************************/
@@ -80,7 +83,7 @@ p {
   line-height: 1.8em; }
 
 ol li, ul li {
-  font-size: 1.4em;
+  font-size: 0.8em;
   line-height: 1.6em; }
 
 section {
@@ -91,14 +94,14 @@ section {
   margin-bottom: 90px; }
 
 .section-title {
-  font-size: 44px;
-  font-weight: 100;
+  font-size: 20px;
+  font-weight: 700;
   margin-bottom: 50px; }
 
 .hr {
   width: 100%;
   height: 1px;
-  background-color: #d0d0d0; }
+  background-color: #BFA1E3; }
 
 /********************************************
 NAVIGATION
@@ -109,12 +112,12 @@ nav {
   z-index: 1100;
   top: 0;
   position: fixed;
-  display: block;
+  display: inline-block;
   width: 100%; }
   nav #logo {
     text-decoration: none;
     color: #BFA1E3; }
-  nav h1 {
+  nav h1, nav .text-bold {
     margin-bottom: 20px;
     color: #BFA1E3; }
   nav .site-title {
@@ -122,29 +125,33 @@ nav {
     display: inline-block;
     margin-top: 4px; }
   nav .exhibition-info-title {
-    color: #d0d0d0; }
-  nav ul.nav-menu {
-    display: inline-block;
-    float: right;
-    font-size: 0.8em; }
-    nav ul.nav-menu li {
-      padding: 0px 4px;
-      margin-bottom: 12px; }
-    nav ul.nav-menu a {
-      text-decoration: none;
-      color: #BFA1E3;
-      font-weight: 700; }
-      nav ul.nav-menu a:hover {
-        border-bottom: 2px solid #BFA1E3; }
+    color: #706f6f; }
+
+ul.nav-menu {
+  display: inline;
+  float: right;
+  font-size: 22px;
+  position: fixed;
+  top: 34px;
+  right: 154px; }
+  ul.nav-menu li {
+    padding: 0px 4px;
+    margin-bottom: 12px; }
+  ul.nav-menu a {
+    text-decoration: none;
+    color: #BFA1E3;
+    font-weight: 700; }
+    ul.nav-menu a:hover {
+      border-bottom: 2px solid #BFA1E3; }
 
 /********************************************
 MAIN
 ********************************************/
 #main .poster-text {
-  font-size: 1.3em;
+  font-size: 1.7em;
   font-weight: 500;
   line-height: 1.8em;
-  z-index: 20;
+  z-index: 200;
   color: #9d9d9c;
   mix-blend-mode: multiply; }
 
@@ -164,21 +171,22 @@ MAIN
     width: 400px;
     height: 400px;
     align-self: center;
-    text-align: center; }
+    text-align: center;
+    opacity: 0.5; }
 
 a.artist-name {
   background-color: #fff;
-  border-radius: 3px;
-  padding: 3px 4px 0px 4px;
+  padding: 3px 1px 0px 1px;
   margin-right: 1px;
   text-decoration: none;
+  border-bottom: 2px solid #706f6f;
   -webkit-transition: background-color .20s ease-out;
   -moz-transition: background-color .20s ease-out;
   -o-transition: background-color .20s ease-out;
   transition: background-color .20s ease-out; }
   a.artist-name:hover {
-    background-color: #BFA1E3;
-    color: #fff; }
+    border-bottom: 2px solid #BFA1E3;
+    color: #BFA1E3; }
 
 /********************************************
 ARTISTS
@@ -209,17 +217,27 @@ ul.group-info-text li {
   line-height: 2em;
   font-size: 1.2em; }
 
+.exhibition-info-detail .col-sm-4 div:nth-child(1) {
+  margin-bottom: 30px; }
+
+h6.exhibition-info-title {
+  border-bottom: 2px solid #706f6f;
+  font-weight: 700;
+  display: inline; }
+
+.exhibition-intro.col-sm-83 {
+  margin-bottom: 80px; }
+
 /********************************************
 FOOTER
 ********************************************/
 footer {
-  border-top: 1px solid rgba(208, 208, 208, 0.2);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  border-top: 1px solid rgba(157, 157, 156, 0.2);
+  padding-top: 0px;
+  padding-bottom: 20px;
   bottom: 0;
   color: #d0d0d0;
-  margin-top: 60px;
-  background-color: #fdfdfd; }
+  margin-top: 60px; }
   footer h6 {
     font-weight: 700;
     margin-bottom: 12px; }
@@ -236,7 +254,6 @@ footer {
 #map {
   width: 100%;
   height: 400px;
-  background-color: grey;
-  margin-top: 40px; }
+  background-color: grey; }
 
 /*# sourceMappingURL=style.css.map */
