@@ -4,6 +4,7 @@
 @import "reset";
 @import "variables";
 @import "grid";
+@import "hover";
 
 $primary-color: #BFA1E3;
 $grey-25: #d0d0d0;
@@ -165,11 +166,11 @@ MAIN
   z-index: 0;
   left: 0;
   img {
-    width: 400px;
-    height: 400px; 
+    width: 50%; 
     align-self: center;
     text-align: center;
     opacity: 0.5;
+    margin-top: 70px;
   }
 }
 
@@ -260,7 +261,7 @@ FOOTER
 ********************************************/
 footer {
   border-top: 1px solid rgba($grey-txt, 0.2);
-  padding-top: 0px;
+  padding-top: 20px;
   padding-bottom: 20px;
   bottom: 0;
   color: $grey-25;
@@ -279,10 +280,6 @@ footer {
       text-decoration: none;
     }
   }
-}
-
-.copyright-text {
-  margin-top: 40px;
 }
 
 #map {
