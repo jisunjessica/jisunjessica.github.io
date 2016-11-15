@@ -62,7 +62,7 @@ ol li, ul li {
 
 section {
   width: 100%;
-  padding-top: 40px;
+  padding-top: 90px;
   padding-bottom: 40px;
   margin-top: 90px;
   margin-bottom: 90px;
@@ -104,6 +104,10 @@ nav {
   #logo {
     text-decoration: none;
     color: $grey-txt-d1;
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 
   h1, .text-bold {
@@ -143,14 +147,14 @@ ul.nav-menu {
     padding-left: 8px;
     padding-right: 8px;
 
+    -webkit-transition: box-shadow .20s ease-out;
+    -moz-transition: box-shadow .20s ease-out;
+    -o-transition: box-shadow .20s ease-out;
+    transition: box-shadow .20s ease-out;
+
     &:hover {
       border-bottom: 2px solid rgba($primary-color, 0.8);
       box-shadow: inset 0 -12px 0 rgba($primary-color, 0.8);
-
-      -webkit-transition: background-color .20s ease-out;
-      -moz-transition: background-color .20s ease-out;
-      -o-transition: background-color .20s ease-out;
-      transition: background-color .20s ease-out;
     }
   }
 }  
@@ -201,10 +205,10 @@ a.artist-name {
   border-bottom: 1px solid rgba($primary-color, 0.8);
   box-shadow: inset 0 -12px 0 rgba($primary-color, 0.8);
 
-  -webkit-transition: background-color .20s ease-out;
-  -moz-transition: background-color .20s ease-out;
-  -o-transition: background-color .20s ease-out;
-  transition: background-color .20s ease-out;
+  -webkit-transition: box-shadow .20s ease-out;
+  -moz-transition: box-shadow .20s ease-out;
+  -o-transition: box-shadow .20s ease-out;
+  transition: box-shadow .20s ease-out;
 
   &:hover {
     border-bottom: 1px solid $primary-color;
@@ -230,12 +234,12 @@ ARTISTS
   h4 {
     font-weight: 700;
     margin-bottom: 20px;
+    line-height: 1.6em;
   }
 
   .one-artist {
     margin-bottom: 50px;
   }
-
 }
 
 
@@ -256,7 +260,8 @@ ul.group-info-text {
   li {
     list-style-type: square;
     line-height: 2em;
-    font-size: 1.2em;
+    font-size: 1em;
+    border-bottom: 1px solid rgba($primary-color, 0.1);
   }
 }
 
@@ -272,6 +277,11 @@ h6.exhibition-info-title {
   display: inline;
 }
 
+p.info-detail {
+  margin-top: 10px;
+  line-height: 1.6em;
+}
+
 .exhibition-intro.col-sm-83 {
   margin-bottom: 80px;
 }
@@ -280,7 +290,7 @@ h6.exhibition-info-title {
 FOOTER
 ********************************************/
 footer {
-  border-top: 1px solid rgba($grey-txt, 0.2);
+  border-top: 1px solid $primary-color;
   padding-top: 20px;
   padding-bottom: 20px;
   bottom: 0;
