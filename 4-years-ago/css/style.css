@@ -3762,12 +3762,17 @@ table {
     width: 25px;
     height: 25px; }
 
+@media screen and (min-width: 1066px) {
+  ul.nav-menu {
+    display: flex; }
+    ul.nav-menu li {
+      margin-right: 20px; } }
 /********************************************
 GENERAL
 ********************************************/
 * {
   font-family: "Spoqa Han Sans","Source Sans Pro",Apple SD Gothic Neo,Nanum Barun Gothic,Nanum Gothic,"돋움",Dotum,Verdana,Arial,sans-serif;
-  color: #706f6f; }
+  color: #6f6c73; }
 
 .text-bold {
   font-weight: 700; }
@@ -3779,10 +3784,10 @@ GENERAL
   padding: 0 5%; }
 
 a {
-  color: #706f6f;
+  color: #6f6c73;
   transition: 0.2s ease; }
   a:hover {
-    color: #706f6f; }
+    color: #6f6c73; }
 
 h1 {
   font-size: 3em; }
@@ -3825,23 +3830,32 @@ nav {
   top: 0;
   position: fixed;
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+20,ffffff+90&1+20,0.5+90 */
+  background: -moz-linear-gradient(top, white 20%, rgba(255, 255, 255, 0.5) 90%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 20%, rgba(255, 255, 255, 0.5) 90%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 20%, rgba(255, 255, 255, 0.5) 90%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#80ffffff',GradientType=0 );
+  /* IE6-9 */ }
   nav #logo {
     text-decoration: none;
-    color: #BFA1E3; }
+    color: #6f6c73; }
   nav h1, nav .text-bold {
-    margin-bottom: 20px;
-    color: #BFA1E3; }
+    margin-bottom: 20px; }
   nav .site-title {
     font-size: 1.3em;
     display: inline-block;
     margin-top: 4px; }
   nav .exhibition-info-title {
-    color: #706f6f; }
+    color: #6f6c73; }
 
 ul.nav-menu {
   display: inline;
   float: right;
+  text-align: right;
   font-size: 22px;
   position: fixed;
   top: 34px;
@@ -3851,20 +3865,27 @@ ul.nav-menu {
     margin-bottom: 12px; }
   ul.nav-menu a {
     text-decoration: none;
-    color: #BFA1E3;
-    font-weight: 700; }
+    color: #6f6c73;
+    font-weight: 700;
+    padding-left: 8px;
+    padding-right: 8px; }
     ul.nav-menu a:hover {
-      border-bottom: 2px solid #BFA1E3; }
+      border-bottom: 2px solid rgba(191, 161, 227, 0.8);
+      box-shadow: inset 0 -12px 0 rgba(191, 161, 227, 0.8);
+      -webkit-transition: background-color .20s ease-out;
+      -moz-transition: background-color .20s ease-out;
+      -o-transition: background-color .20s ease-out;
+      transition: background-color .20s ease-out; }
 
 /********************************************
 MAIN
 ********************************************/
 #main .poster-text {
   font-size: 1.7em;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.8em;
   z-index: 200;
-  color: #9d9d9c;
+  color: #6f6c73;
   mix-blend-mode: multiply; }
 
 .bg {
@@ -3878,7 +3899,8 @@ MAIN
   mix-blend-mode: multiply;
   position: absolute;
   z-index: 0;
-  left: 0; }
+  left: 0;
+  display: none; }
   .bg img {
     width: 50%;
     align-self: center;
@@ -3887,17 +3909,19 @@ MAIN
     margin-top: 70px; }
 
 a.artist-name {
-  background-color: #fff;
-  padding: 3px 1px 0px 1px;
+  color: #6f6c73;
+  padding: 3px 3px 0px 3px;
   margin-right: 1px;
   text-decoration: none;
-  border-bottom: 2px solid #706f6f;
+  border-bottom: 1px solid rgba(191, 161, 227, 0.8);
+  box-shadow: inset 0 -12px 0 rgba(191, 161, 227, 0.8);
   -webkit-transition: background-color .20s ease-out;
   -moz-transition: background-color .20s ease-out;
   -o-transition: background-color .20s ease-out;
   transition: background-color .20s ease-out; }
   a.artist-name:hover {
-    border-bottom: 2px solid #BFA1E3;
+    border-bottom: 1px solid #BFA1E3;
+    box-shadow: inset 0 -2px 0 #BFA1E3;
     color: #BFA1E3; }
 
 /********************************************
@@ -3933,7 +3957,7 @@ ul.group-info-text li {
   margin-bottom: 30px; }
 
 h6.exhibition-info-title {
-  border-bottom: 2px solid #706f6f;
+  border-bottom: 2px solid #6f6c73;
   font-weight: 700;
   display: inline; }
 
