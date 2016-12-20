@@ -17,7 +17,8 @@ h2 {
   font-weight: 500; }
 
 h3 {
-  font-weight: 400; }
+  font-weight: 400;
+  margin-top: 70px; }
 
 p {
   font-weight: 16px; }
@@ -34,29 +35,27 @@ p {
 @keyframes wrench-wait2 {
   0% {
     transform: rotate(0deg); }
-  14% {
+  10% {
     transform: rotate(24deg); }
-  29% {
+  25% {
     transform: rotate(-24deg); }
-  31% {
+  27% {
     transform: rotate(-24deg); }
-  44% {
+  40% {
     transform: rotate(24deg); }
-  46% {
+  42% {
     transform: rotate(24deg); }
-  61% {
+  57% {
     transform: rotate(-24deg); }
-  63% {
+  69% {
     transform: rotate(-24deg); }
-  78% {
+  74% {
     transform: rotate(24deg); }
-  80% {
+  76% {
     transform: rotate(24deg); }
-  95% {
+  91% {
     transform: rotate(-24deg); }
-  97% {
-    transform: rotate(-24deg); }
-  100% {
-    transform: rotate(24deg); } }
+  93% {
+    transform: rotate(-24deg); } }
 
 /*# sourceMappingURL=animation.css.map */

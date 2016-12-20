@@ -22,6 +22,7 @@ h2 {
 
 h3 {
   font-weight: 400;
+  margin-top: 70px;
 }
 p {
   font-weight: 16px;
@@ -41,22 +42,20 @@ p {
 @keyframes wrench-wait2 {
   0% { transform:rotate(0deg) }
 
-  14% { transform:rotate(24deg) }
+  10% { transform:rotate(24deg) }
 
-  29% { transform:rotate(-24deg) }
-  31% { transform:rotate(-24deg) }
+  25% { transform:rotate(-24deg) }
+  27% { transform:rotate(-24deg) }
 
-  44% { transform:rotate(24deg) }
-  46% { transform:rotate(24deg) }
+  40% { transform:rotate(24deg) }
+  42% { transform:rotate(24deg) }
   
-  61% { transform:rotate(-24deg) }
-  63% { transform:rotate(-24deg) }
+  57% { transform:rotate(-24deg) }
+  69% { transform:rotate(-24deg) }
   
-  78% { transform:rotate(24deg) }
-  80% { transform:rotate(24deg) }
+  74% { transform:rotate(24deg) }
+  76% { transform:rotate(24deg) }
   
-  95% { transform:rotate(-24deg) }
-  97% { transform:rotate(-24deg) }
-  
-  100% { transform:rotate(24deg) }
+  91% { transform:rotate(-24deg) }
+  93% { transform:rotate(-24deg) }
 }
