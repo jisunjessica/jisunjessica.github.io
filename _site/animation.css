@@ -11,24 +11,34 @@ body {
   transform-origin: 22.5% 22.5%; }
 
 @keyframes wrench-wait2 {
-  10% {
+  5.16129% {
     transform: rotate(12deg); }
-  20% {
+  6.45161% {
     transform: rotate(24deg); }
-  30% {
+  11.6129% {
     transform: rotate(-24deg); }
-  40% {
+  12.90323% {
     transform: rotate(-24deg); }
-  50% {
+  18.06451% {
     transform: rotate(24deg); }
-  60% {
+  19.35484% {
     transform: rotate(24deg); }
-  70% {
+  24.51613% {
     transform: rotate(-24deg); }
-  80% {
+  25.80645% {
     transform: rotate(-24deg); }
-  90% {
+  30.96774% {
     transform: rotate(24deg); }
+  32.25807% {
+    transform: rotate(24deg); }
+  37.41935% {
+    transform: rotate(-24deg); }
+  38.70968% {
+    transform: rotate(-24deg); }
+  43.87097% {
+    transform: rotate(24deg); }
+  48.3871% {
+    transform: rotate(0deg); }
   100% {
     transform: rotate(0deg); } }
 
