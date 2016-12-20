@@ -6,7 +6,7 @@ body {
 .wrench {
   text-align: center;
   margin: 0 auto;
-  animation: wrench-wait2 3s 1.5s ease infinite;
+  animation: wrench-wait2 5s 0.2s ease infinite;
   animation-fill-mode: forward;
   transform-origin: 22.5% 22.5%; }
 
