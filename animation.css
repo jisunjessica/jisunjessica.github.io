@@ -11,6 +11,8 @@ body {
   transform-origin: 22.5% 22.5%; }
 
 @keyframes wrench-wait2 {
+  0% {
+    transform: rotate(-12deg); }
   5.16129% {
     transform: rotate(12deg); }
   6.45161% {
