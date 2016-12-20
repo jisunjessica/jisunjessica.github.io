@@ -20,6 +20,9 @@ h2 {
   font-weight: 500;
 }
 
+h3 {
+  font-weight: 400;
+}
 p {
   font-weight: 16px;
 }
@@ -29,6 +32,9 @@ p {
   margin: 0 auto;
   animation: wrench-wait2 8s ease infinite;
   transform-origin: 22.5% 22.5%;
+  margin-top: 44px;
+  margin-bottom: 44px;
+  animation-fill-mode: backwards;
 }
 
 //keyframe
