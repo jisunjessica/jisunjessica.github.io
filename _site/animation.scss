@@ -1,16 +1,20 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-  
+
 body {
   padding: 0;
   margin: 0;
   background: #f8fafb;
   text-align: center;
+  color: #4d5256;
 }
 
 h1 {
   font-size: 60px;
-  font-weight: 300;
+  font-weight: 200;
+  color: #4c80f1;
+  margin-bottom: -18px;
 }
+
 h2 {
   font-size: 36px;
   font-weight: 500;
@@ -23,24 +27,30 @@ p {
 .wrench {
   text-align: center;
   margin: 0 auto;
-  animation: wrench-wait2 12s ease infinite;
+  animation: wrench-wait2 8s ease infinite;
   transform-origin: 22.5% 22.5%;
 }
 
 //keyframe
 @keyframes wrench-wait2 {
   0% { transform:rotate(0deg) }
-  47.45161% { transform:rotate(24deg) }
-  52.6129% { transform:rotate(-24deg) }
-  53.90323% { transform:rotate(-24deg) }
-  59.06451% { transform:rotate(24deg) }
-  60.35484% { transform:rotate(24deg) }
-  65.51613% { transform:rotate(-24deg) }
-  66.80645% { transform:rotate(-24deg) }
-  71.96774% { transform:rotate(24deg) }
-  73.25807% { transform:rotate(24deg) }
-  78.41935% { transform:rotate(-24deg) }
-  79.70968% { transform:rotate(-24deg) }
-  84.87097% { transform:rotate(24deg) }
-  89.3871% { transform:rotate(0deg) }
+
+  14% { transform:rotate(24deg) }
+
+  29% { transform:rotate(-24deg) }
+  31% { transform:rotate(-24deg) }
+
+  44% { transform:rotate(24deg) }
+  46% { transform:rotate(24deg) }
+  
+  61% { transform:rotate(-24deg) }
+  63% { transform:rotate(-24deg) }
+  
+  78% { transform:rotate(24deg) }
+  80% { transform:rotate(24deg) }
+  
+  95% { transform:rotate(-24deg) }
+  97% { transform:rotate(-24deg) }
+  
+  100% { transform:rotate(24deg) }
 }
