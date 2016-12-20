@@ -6,13 +6,13 @@ body {
 .wrench {
   text-align: center;
   margin: 0 auto;
-  animation: wrench-wait2 5s 0.2s ease infinite;
+  animation: wrench-wait2 10s ease infinite;
   animation-fill-mode: backward;
   transform-origin: 22.5% 22.5%; }
 
 @keyframes wrench-wait2 {
   0% {
-    transform: rotate(-12deg); }
+    transform: rotate(0deg); }
   5.16129% {
     transform: rotate(12deg); }
   6.45161% {
@@ -40,8 +40,6 @@ body {
   43.87097% {
     transform: rotate(24deg); }
   48.3871% {
-    transform: rotate(0deg); }
-  100% {
     transform: rotate(0deg); } }
 
 /*# sourceMappingURL=animation.css.map */
