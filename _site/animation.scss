@@ -22,8 +22,8 @@ h2 {
 
 h3 {
   font-weight: 400;
-  margin-top: 70px;
 }
+
 p {
   font-weight: 16px;
 }
@@ -31,31 +31,61 @@ p {
 .wrench {
   text-align: center;
   margin: 0 auto;
-  animation: wrench-wait2 8s ease infinite;
-  transform-origin: 22.5% 22.5%;
+  animation: wrench-wait2 3s ease-in infinite;
+  transform-origin: 28px 28px;
   margin-top: 44px;
   margin-bottom: 44px;
-  animation-fill-mode: backwards;
+  z-index: 100;
+  position: relative;
+  left: 20px;
+  top: 120px;
 }
 
 //keyframe
 @keyframes wrench-wait2 {
-  0% { transform:rotate(0deg) }
+  22% { transform:rotate(-30deg) }
+  26% { transform:rotate(-30deg) }
 
-  10% { transform:rotate(24deg) }
+  42% { transform:rotate(30deg) }
+  46% { transform:rotate(30deg) }
 
-  25% { transform:rotate(-24deg) }
-  27% { transform:rotate(-24deg) }
+  62% { transform:rotate(-30deg) }
+  66% { transform:rotate(-30deg) }
 
-  40% { transform:rotate(24deg) }
-  42% { transform:rotate(24deg) }
-  
-  57% { transform:rotate(-24deg) }
-  69% { transform:rotate(-24deg) }
-  
-  74% { transform:rotate(24deg) }
-  76% { transform:rotate(24deg) }
-  
-  91% { transform:rotate(-24deg) }
-  93% { transform:rotate(-24deg) }
+  82% { transform:rotate(30deg) }
+  86% { transform:rotate(30deg) }
+
+  95% { transform:rotate(15deg) }
+  100% { transform:rotate(0deg) }
+
+
+}
+
+
+.thunder {
+  animation: error-thunder 1.3s ease-out infinite;
+  opacity: 0;
+  z-index: 100;
+  position: relative;
+  left: 152px;
+  top: -94px;
+
+}
+
+//keyframe
+@keyframes error-thunder {
+  50% {
+    transform: translate(-15px, 15px);
+    opacity: 1;
+  }
+}
+
+.bg-device {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  background: url(img_device-bg.png) no-repeat no-repeat;
+  z-index: 0;
+  position: relative;
+  top: -140px;
 }
