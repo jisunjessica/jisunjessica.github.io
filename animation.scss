@@ -31,7 +31,7 @@ p {
 .wrench {
   text-align: center;
   margin: 0 auto;
-  animation: wrench-wait2 3s ease-in infinite;
+  animation: wrench-move 3s ease-in infinite;
   transform-origin: 26px 26px;
   margin-top: 44px;
   margin-bottom: 44px;
@@ -42,7 +42,7 @@ p {
 }
 
 //keyframe
-@keyframes wrench-wait2 {
+@keyframes wrench-move {
   22% { transform:rotate(-30deg) }
   26% { transform:rotate(-30deg) }
 
