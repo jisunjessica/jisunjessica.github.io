@@ -25,8 +25,8 @@ p {
 .wrench {
   text-align: center;
   margin: 0 auto;
-  animation: wrench-wait2 3s ease-in infinite;
-  transform-origin: 28px 28px;
+  animation: wrench-move 3s ease-in infinite;
+  transform-origin: 26px 26px;
   margin-top: 44px;
   margin-bottom: 44px;
   z-index: 100;
@@ -34,7 +34,7 @@ p {
   left: 20px;
   top: 120px; }
 
-@keyframes wrench-wait2 {
+@keyframes wrench-move {
   22% {
     transform: rotate(-30deg); }
   26% {
@@ -68,12 +68,43 @@ p {
     transform: translate(-15px, 15px);
     opacity: 1; } }
 .bg-device {
-  width: 180px;
-  height: 180px;
+  width: 184px;
+  height: 184px;
   margin: 0 auto;
   background: url(img_device-bg.png) no-repeat no-repeat;
   z-index: 0;
   position: relative;
   top: -140px; }
+
+.bg-compass {
+  width: 180px;
+  height: 206px;
+  margin: 0 auto;
+  background: url(img_compass.png) no-repeat no-repeat;
+  background-size: 100% 100%;
+  z-index: 0;
+  position: relative;
+  top: -140px; }
+
+.needle {
+  width: 40px;
+  height: 102px;
+  text-align: center;
+  margin: 0 auto;
+  animation: needle-move 5.5s ease-out infinite;
+  transform-origin: 50% 50%;
+  margin-top: 44px;
+  margin-bottom: 44px;
+  z-index: 100;
+  position: relative;
+  top: 72px; }
+
+@keyframes needle-move {
+  0% {
+    transform: rotate(-20deg); }
+  50% {
+    transform: rotate(340deg); }
+  100% {
+    transform: rotate(-20deg); } }
 
 /*# sourceMappingURL=animation.css.map */
