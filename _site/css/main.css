@@ -66,13 +66,12 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
-  text-decoration: none; }
+  color: #8E76CD;
+  text-decoration: none; } // $purple-0
   a:visited {
-    color: #1756a9; }
+    color: #8E76CD; } // $purple-0
   a:hover {
-    color: #111;
-    text-decoration: underline; }
+    color: #7AE4DB; } // $mint-0
 
 /**
  * Blockquotes
@@ -146,8 +145,7 @@ pre {
  * Site header
  */
 .site-header {
-  border-bottom: 1px solid #e8e8e8;
-  min-height: 56px;
+  min-height: 60px;
   position: relative; }
 
 .site-title {
@@ -206,7 +204,6 @@ pre {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
   padding: 30px 0; }
 
 .footer-heading {
@@ -260,7 +257,7 @@ pre {
 .page-content {
   padding: 30px 0;
   margin: 0 auto;
-  width: 700px; }
+  max-width: 740px; }
 
 .page-heading {
   font-size: 20px; }
@@ -451,3 +448,9 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+//adhoc styles
+
+.text-center {
+  text-align: center;
+}
