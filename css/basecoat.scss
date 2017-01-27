@@ -11,9 +11,11 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Spoqa Han Sans', Sans-serif;
+  font-size: $font-size-base;
+  font-weight: 400;
   color: #525156;
-  background-color: #fdfdfd;
+  background-color: $background-color-base;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -66,12 +68,13 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #8E76CD;
-  text-decoration: none; } // $purple-0
+  color: $purple-0;
+  text-decoration: none; }
   a:visited {
-    color: #8E76CD; } // $purple-0
+    color: $purple-0; }
   a:hover {
-    color: #7AE4DB; } // $mint-0
+    padding-bottom: 2px;
+    border-bottom: 3px solid $mint-0; }
 
 /**
  * Blockquotes
@@ -448,30 +451,3 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
-
-//adhoc styles
-
-.text-center {
-  text-align: center;
-}
-
-.link-box {
-  border: 1px solid #F1F5F5;
-  border-radius: 6px;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 15px;
-  box-shadow: 0px 2px 4px #888888;
-
-  h3 {
-    font-size: 22px;
-  }
-
-  ul {
-    list-style-type: none;
-    > li {
-      font-size: 24px;
-      font-weight: 700;
-    }
-  }
-}
