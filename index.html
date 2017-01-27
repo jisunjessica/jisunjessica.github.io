@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+
+<main class="page-content" aria-label="Content">
+  <div class="wrapper">
+    <div class="link-box text-center">
+      <h1 class="page-heading">Blog Posts</h1>
+      <ul class="post-list links">
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      </div>
+  </div>
+</main>
