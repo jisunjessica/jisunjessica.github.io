@@ -3,6 +3,10 @@
 
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 
+* {
+  font-family: 'open-arrow', SpoqaHanSans, sans-serif;
+}
+
 //adhoc styles
 
 .text-center {
@@ -60,4 +64,43 @@ ul.links {
   color: $purple-0;
   padding-top: 10px;
   padding-bottom: 40px;
+}
+
+//table
+
+h3.table-legend {
+  text-align: left;
+  color: $purple-0;
+}
+
+table.table {
+  width: 100%;
+  text-align: left;
+
+  th, td {
+    border-bottom: 1px solid $gray-l1;
+    word-break: break-word;
+  }
+  thead th {
+    padding-bottom: 12px;
+  }
+  tbody {
+    tr > th, 
+    tr > td {
+     padding: 6px 4px 6px 0px; 
+    }
+  }  
+  .project-title {
+    td {
+      border-bottom: none;
+    }
+  }
+  .project-description {
+    font-size: $font-size-sm;
+    color: #a7a7af;
+    td {
+      padding-top: 2px;
+      padding-bottom: 10px;
+    }
+  }
 }

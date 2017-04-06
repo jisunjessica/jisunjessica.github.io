@@ -538,6 +538,9 @@ pre > code {
 .highlight .il {
   color: #099; }
 
+* {
+  font-family: 'open-arrow', SpoqaHanSans, sans-serif; }
+
 .text-center {
   text-align: center; }
 
@@ -582,5 +585,29 @@ ul.links {
   color: #8E76CD;
   padding-top: 10px;
   padding-bottom: 40px; }
+
+h3.table-legend {
+  text-align: left;
+  color: #8E76CD; }
+
+table.table {
+  width: 100%;
+  text-align: left; }
+  table.table th, table.table td {
+    border-bottom: 1px solid #F1F5F5;
+    word-break: break-word; }
+  table.table thead th {
+    padding-bottom: 12px; }
+  table.table tbody tr > th,
+  table.table tbody tr > td {
+    padding: 6px 4px 6px 0px; }
+  table.table .project-title td {
+    border-bottom: none; }
+  table.table .project-description {
+    font-size: 14px;
+    color: #a7a7af; }
+    table.table .project-description td {
+      padding-top: 2px;
+      padding-bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */
