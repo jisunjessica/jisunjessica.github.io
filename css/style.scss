@@ -28,11 +28,9 @@
 
 
 .link-box {
-  background-color: $white;
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 26px;
-  padding: 22px 15px 6px 15px;
 
   h3 {
     font-size: 22px;
@@ -42,8 +40,8 @@ ul.links {
   list-style-type: none;
   margin-left: 0;
   & > li {
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 3px;
   }
   a {
