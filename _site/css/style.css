@@ -18,7 +18,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: 'Spoqa Han Sans', Sans-serif;
+  font-family: 'Eczar', Sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #525156;
@@ -561,7 +561,7 @@ pre > code {
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 26px;
-  padding: 22px 15px 6px 15px;
+  padding: 18px 0 6px 0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04); }
   .link-box h3 {
     font-size: 22px; }
