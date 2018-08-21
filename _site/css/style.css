@@ -7,7 +7,7 @@
 /**
  * Reset some basic elements
  */
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -75,15 +75,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #8E76CD;
-  text-decoration: none; }
-
-a:visited {
-  color: #8E76CD; }
-
-a:hover {
-  padding-bottom: 2px;
-  border-bottom: 3px solid #7AE4DB; }
+  color: #363A3C !important;
+  font-weight: 800;
+  text-decoration: none !important; }
+  a:visited {
+    color: #363A3C !important; }
+  a:hover {
+    padding-bottom: 2px !important;
+    border-bottom: 3px solid #7AE4DB;
+    color: #363A3C; }
 
 /**
  * Blockquotes
@@ -166,10 +166,7 @@ pre > code {
 .site-title {
   font-size: 22px;
   font-weight: 500;
-  line-height: 56px;
-  letter-spacing: 0px;
-  margin-bottom: 0;
-  float: left; }
+  line-height: 56px; }
 
 .site-title, .site-title:visited {
   color: #424242; }
@@ -538,49 +535,67 @@ pre > code {
 .highlight .il {
   color: #099; }
 
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.container-fluid {
+  max-width: 800px; }
+
+header {
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 55px;
+  border-bottom: 1px dotted #7AE4DB; }
+
+section {
+  margin-bottom: 30px; }
+
+ul {
+  list-style-type: none; }
+  @media only screen and (max-width: 580px) {
+    ul {
+      margin-left: 0; } }
+  ul li {
+    margin-bottom: 16px; }
+
 .text-center {
   text-align: center; }
 
-.site-header-contents {
-  padding-top: 30px;
-  padding-bottom: 18px;
-  line-height: 1.75em; }
-  .site-header-contents p a {
-    color: #525156;
-    font-weight: 700; }
-    .site-header-contents p a:hover {
-      border-bottom: 0px; }
-  .site-header-contents .site-title-name {
-    font-size: 24px;
-    font-weight: 700; }
+.section-title {
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.1; }
 
-.link-box {
-  background-color: #fff;
-  border: 1px solid #F1F5F5;
-  border-radius: 6px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 26px;
-  padding: 18px 0 6px 0;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04); }
-  .link-box h3 {
-    font-size: 22px; }
+a.site-title {
+  color: #363A3C;
+  font-weight: 800;
+  font-size: 28px; }
+  a.site-title:visited {
+    color: #363A3C;
+    text-decoration: none; }
+  a.site-title:hover {
+    padding-bottom: 2px;
+    color: #363A3C;
+    text-decoration: none;
+    border-bottom: none; }
 
-ul.links {
-  list-style-type: none;
-  margin-left: 0; }
-  ul.links > li {
-    padding-top: 18px;
-    padding-bottom: 18px;
-    border-radius: 3px; }
-  ul.links a {
-    color: #525156;
-    font-size: 24px;
-    font-weight: 700; }
+a.sns-link {
+  color: #c1c5c7;
+  margin-right: 20px; }
+  a.sns-link:visited {
+    color: #c1c5c7;
+    text-decoration: none; }
+  a.sns-link:hover {
+    padding-bottom: 2px;
+    border-bottom: 3px solid #7AE4DB;
+    color: #7AE4DB;
+    text-decoration: none; }
 
-.footer-word {
-  color: #8E76CD;
-  padding-top: 10px;
-  padding-bottom: 40px; }
+.line-through {
+  text-decoration: line-through;
+  color: #c1c5c7; }
+
+.sns-link-group {
+  margin-top: 28px; }
 
 /*# sourceMappingURL=style.css.map */

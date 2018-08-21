@@ -1,58 +1,91 @@
 @import "variables";
 @import "basecoat";
 
-@import url('https://fonts.googleapis.com/css?family=Eczar');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container-fluid {
+  max-width: 800px;
+}
+
 
 //adhoc styles
+header {
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 55px;
+  border-bottom: 1px dotted $mint-0;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+
+  @media only screen and (max-width: 580px) {
+    margin-left: 0;
+  }
+
+  li {
+    margin-bottom: 16px;
+  }
+}
 
 .text-center {
   text-align: center;
 }
 
-.site-header-contents {
-  padding-top: 30px;
-  padding-bottom: 18px;
-  line-height: 1.75em;
-  p a {
-    color: $text-color;
-    font-weight: 700;
-    &:hover {
-      border-bottom: 0px;
-    }
+.section-title {
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+a.site-title {
+  color: $black;
+  font-weight: 800;
+  font-size: 28px;
+
+  &:visited {
+    color: $black;
+    text-decoration: none;
   }
-  .site-title-name {
-    font-size: 24px;
-    font-weight: 700;
+
+  &:hover {
+    padding-bottom: 2px;
+    color: $black;
+    text-decoration: none;
+    border-bottom: none;
   }
 }
 
+a.sns-link {
+  color: $m-gray;
 
-.link-box {
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 26px;
+  &:visited {
+    color: $m-gray;
+    text-decoration: none;
+  }
 
-  h3 {
-    font-size: 22px;
+  &:hover {
+    padding-bottom: 2px;
+    border-bottom: 3px solid $mint-0;
+    color: $mint-0;
+    text-decoration: none;
   }
-}
-ul.links {
-  list-style-type: none;
-  margin-left: 0;
-  & > li {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 3px;
-  }
-  a {
-    color: $text-color;
-    font-size: 24px;
-    font-weight: 700;
-  }
+  margin-right: 20px;
 }
 
-.footer-word {
-  color: $purple-0;
-  padding-top: 10px;
-  padding-bottom: 40px;
+.line-through {
+  text-decoration: line-through;
+  color: $m-gray;
+}
+
+.sns-link-group {
+  margin-top: 28px;
 }
