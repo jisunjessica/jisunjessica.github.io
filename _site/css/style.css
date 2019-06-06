@@ -542,7 +542,6 @@ body {
   max-width: 800px; }
 
 header {
-  padding-left: 15px;
   margin-top: 20px;
   margin-bottom: 55px;
   border-bottom: 1px dotted #7AE4DB; }
@@ -597,5 +596,3 @@ a.sns-link {
 
 .sns-link-group {
   margin-top: 28px; }
-
-/*# sourceMappingURL=style.css.map */
