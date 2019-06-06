@@ -17,12 +17,8 @@ body {
 
 //adhoc styles
 header {
-  padding-left: 30px;
   margin-bottom: 55px;
   box-shadow: 0px 1px 8px 8px $gray-l1;
-  @media only screen and (max-width: 830px) {
-    padding-left: 15px;
-  }
 }
 
 section {
@@ -49,6 +45,7 @@ ul {
   font-weight: 800;
   margin-bottom: 20px;
   line-height: 1.1;
+  color: $mint-0;
 }
 
 a.site-title {
@@ -93,4 +90,14 @@ a.sns-link {
 
 .sns-link-group {
   padding-bottom: 14px;
+  display: inline-block;
+  float: right;
+  margin-top: -40px;
+  /* TODO: 코드 디벨롭하기 */
+}
+
+.hello {
+  line-height: 1.4;
+  margin-bottom: 30px;
+  color: $mint-0;
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  *Colors
  */
@@ -542,12 +543,8 @@ body {
   max-width: 800px; }
 
 header {
-  padding-left: 30px;
   margin-bottom: 55px;
   box-shadow: 0px 1px 8px 8px #ebefef; }
-  @media only screen and (max-width: 830px) {
-    header {
-      padding-left: 15px; } }
 
 section {
   margin-bottom: 30px; }
@@ -566,7 +563,8 @@ ul {
 .section-title {
   font-weight: 800;
   margin-bottom: 20px;
-  line-height: 1.1; }
+  line-height: 1.1;
+  color: #7AE4DB; }
 
 a.site-title {
   color: #363A3C;
@@ -598,4 +596,13 @@ a.sns-link {
   color: #c1c5c7; }
 
 .sns-link-group {
-  padding-bottom: 14px; }
+  padding-bottom: 14px;
+  display: inline-block;
+  float: right;
+  margin-top: -40px;
+  /* TODO: 코드 디벨롭하기 */ }
+
+.hello {
+  line-height: 1.4;
+  margin-bottom: 30px;
+  color: #7AE4DB; }
