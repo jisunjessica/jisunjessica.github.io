@@ -17,9 +17,12 @@ body {
 
 //adhoc styles
 header {
-  margin-top: 20px;
+  padding-left: 30px;
   margin-bottom: 55px;
-  border-bottom: 1px dotted $mint-0;
+  box-shadow: 0px 1px 8px 8px $gray-l1;
+  @media only screen and (max-width: 830px) {
+    padding-left: 15px;
+  }
 }
 
 section {
@@ -75,7 +78,7 @@ a.sns-link {
   }
 
   &:hover {
-    padding-bottom: 2px;
+    padding-bottom: 14px;
     border-bottom: 3px solid $mint-0;
     color: $mint-0;
     text-decoration: none;
@@ -89,5 +92,5 @@ a.sns-link {
 }
 
 .sns-link-group {
-  margin-top: 28px;
+  padding-bottom: 14px;
 }

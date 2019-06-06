@@ -542,9 +542,12 @@ body {
   max-width: 800px; }
 
 header {
-  margin-top: 20px;
+  padding-left: 30px;
   margin-bottom: 55px;
-  border-bottom: 1px dotted #7AE4DB; }
+  box-shadow: 0px 1px 8px 8px #ebefef; }
+  @media only screen and (max-width: 830px) {
+    header {
+      padding-left: 15px; } }
 
 section {
   margin-bottom: 30px; }
@@ -585,7 +588,7 @@ a.sns-link {
     color: #c1c5c7;
     text-decoration: none; }
   a.sns-link:hover {
-    padding-bottom: 2px;
+    padding-bottom: 14px;
     border-bottom: 3px solid #7AE4DB;
     color: #7AE4DB;
     text-decoration: none; }
@@ -595,4 +598,4 @@ a.sns-link {
   color: #c1c5c7; }
 
 .sns-link-group {
-  margin-top: 28px; }
+  padding-bottom: 14px; }
